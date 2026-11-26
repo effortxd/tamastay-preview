@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>My booking · Booking draft (TEST)</title><meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/draft.css"></head>
+<body data-page="mine" class="">
+<div class="testbar"><b>TEST</b><span>Booking system draft. Dummy data; nothing is booked, charged or sent. <a href="index.html">All screens</a></span></div>
+<header class="hd"><div class="wrap"><a class="mark" href="index.html">Equity Homestay<small>My booking</small></a>
+<div class="right"><a href="#" data-toast="TEST: opens WhatsApp chat"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a></div></div></header>
+<main class="wrap gx"><div>
+<div class="test-ctl"><span>TEST: view as</span><div class="seg"><button type="button" data-state="pending">Payment pending</button><button type="button" data-state="deposit">Deposit paid</button><button type="button" data-state="full">Paid in full</button><button type="button" data-state="cancelled">Cancelled</button></div></div>
+<p class="step-no"><span data-s="ref"></span></p><h1>Your stay, <span data-s="dates"></span></h1>
+<p style="margin:6px 0 24px"><span id="pill" class="pill"></span></p>
+<div class="card"><h2>Payments</h2><table class="lines"><tbody>
+<tr data-when="pending"><td>Deposit<small>Not received yet · nights held until 4:51 pm</small></td><td>RM —</td></tr>
+<tr data-when="deposit cancelled"><td>Deposit<small>Paid 26 Nov · FPX</small></td><td>RM —</td></tr>
+<tr data-when="pending deposit"><td>Balance<small>Link on <span data-s="balance-on"></span>, due before arrival</small></td><td>RM —</td></tr>
+<tr data-when="full"><td>Paid in full<small>26 Nov · FPX</small></td><td>RM —</td></tr>
+<tr data-when="cancelled" class="now"><td>Refund, 50% of the deposit<small>Sent 26 Nov · back in your bank in <span class="ph" title="UNVERIFIED: Billplz refund timing">3–5 working days</span></small></td><td>RM —</td></tr>
+</tbody></table>
+<div class="row-btns" data-when="pending"><a class="btn btn-solid" href="#" data-toast="TEST: reopens the same Billplz bill">Pay now</a><span class="note">If you already paid, wait 10 minutes before paying again.</span></div>
+<div class="row-btns" data-when="deposit"><a class="btn btn-solid" href="#" data-toast="TEST: opens a Billplz bill for the balance">Pay the balance now</a><span class="note">or wait for the link on <span data-s="balance-on"></span></span></div>
+<div class="row-btns" data-when="full"><a class="btn btn-line" href="#" data-toast="TEST: downloads the receipt">Receipt</a></div></div>
+<div class="card"><h2>Status</h2><ul class="tl" id="tl"></ul></div>
+<div data-when="pending deposit full">
+<details class="sheet"><summary>Change dates <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="in"><p class="note">You have <span class="ph" title="Owner to confirm">one free change</span> up to 14 days before arrival. The new nights must be free; we hold them first, then release your current ones. A price difference is paid or refunded.</p>
+<a class="btn btn-line" href="g1-dates.html?change=1">Pick new dates</a></div></details>
+<details class="sheet" open><summary>Cancel booking <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="in"><ul class="policy">
+<li><span>More than <span class="ph" title="Owner to confirm">30 days</span></span><span>Refund <span class="ph" title="Owner to confirm">100%</span> of what you paid, less the bank fee</span></li>
+<li class="today-tier"><span><b>Today: 22 days before</b></span><span><b>Refund <span class="ph" title="Owner to confirm">50%</span>: RM —</b></span></li>
+<li><span>Under <span class="ph" title="Owner to confirm">14 days</span></span><span><span class="ph" title="Owner to confirm">No refund</span>, unless we re-let the nights</span></li></ul>
+<p class="note" style="margin-top:12px">The refund goes back the way you paid, in <span class="ph" title="UNVERIFIED: Billplz refund timing">3–5 working days</span>. You'll get the confirmation on WhatsApp.</p>
+<button class="btn btn-danger" id="do-cancel" type="button">Cancel and refund RM —</button></div></details></div>
+</div>
+<aside class="sum" style="display:block;position:static"><img class="pic" src="assets/img/living-sm.jpg" alt="Living room (render)">
+<div class="card"><h3>The whole shophouse</h3><dl class="dl"><dt>Check-in</dt><dd><span data-s="ci"></span>, <span class="ph" title="Owner to confirm">3 pm</span></dd><dt>Checkout</dt><dd><span data-s="co"></span>, <span class="ph" title="Owner to confirm">11 am</span></dd><dt>Guests</dt><dd data-s="guests"></dd><dt>Booked by</dt><dd data-s="name"></dd></dl>
+<p class="note-box"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>The exact address and your door code arrive on <span data-s="guide-on"></span>, once the stay is paid in full.</span></p>
+<a class="btn btn-wa" style="width:100%;margin-top:14px" href="#" data-toast="TEST: opens WhatsApp with your booking number">Ask us on WhatsApp</a></div></aside>
+</main><script src="assets/draft.js"></script>
+</body></html>

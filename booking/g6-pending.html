@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Paying · Booking draft (TEST)</title><meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/draft.css"></head>
+<body data-page="pending" class="">
+<div class="testbar"><b>TEST</b><span>Booking system draft. Dummy data; nothing is booked, charged or sent. <a href="index.html">All screens</a></span></div>
+<header class="hd"><div class="wrap"><a class="mark" href="index.html">Equity Homestay<small>Book</small></a>
+<div class="right"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Step 6 of 7</span></div></div></header>
+<div class="wrap"><div class="prog" aria-hidden="true"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="on"></i><i class=""></i></div></div><main class="wrap gx"><div><p class="step-no">Step 6 of 7 · Paying</p><h1>Waiting for your payment</h1><p class="lede">Your nights are held for you while you pay. This page updates by itself.</p><div class="card" data-when="wait" ><span class="pulse"><i></i>Checking with the bank</span>
+<div class="timer" id="timer" aria-live="off">1:52:12</div><p class="note">Held until <b data-s="until"></b> today. After that the nights reopen for others.</p>
+<div class="row-btns" style="margin-top:16px"><a class="btn btn-solid" href="#" data-toast="TEST: reopens the same Billplz bill, no second charge">Back to the payment page</a><button class="btn btn-line" id="check-now" type="button">I've paid, check now</button></div></div>
+<div class="card" data-when="failed" hidden><span class="pill bad">Payment didn't go through</span><h2 style="margin-top:12px">The bank said no, and nothing was taken</h2>
+<p class="note">Your nights are still held until <b data-s="until"></b>. Try again, or choose another method.</p>
+<div class="row-btns"><a class="btn btn-solid" href="#" data-toast="TEST: opens a new Billplz bill">Pay again</a><a class="btn btn-line" href="g5-pay.html">Choose another method</a></div></div>
+<div class="card" data-when="expired" hidden><span class="pill">Hold ended</span><h2 style="margin-top:12px">The hold ran out before payment arrived</h2>
+<p class="note">The nights are open again. If they are still free you can book them in one tap; if you did pay, don't pay again: we'll confirm or refund in full and tell you on WhatsApp.</p>
+<div class="row-btns"><a class="btn btn-solid" href="g1-dates.html">Check the dates again</a><a class="btn btn-wa" href="#" data-toast="TEST: opens WhatsApp with the booking number">Ask us on WhatsApp</a></div></div>
+<div class="card"><h2>What happens next</h2><ol class="steps-list"><li><span>You finish paying on the bank or card page.</span></li><li><span>We confirm here and on WhatsApp within a minute.</span></li><li><span>The balance link comes on <span data-s="balance-on"></span>; the arrival guide and door code on <span data-s="guide-on"></span>.</span></li></ol>
+<p class="note-box"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>Paid but still see this page? Don't pay twice. Some banks take a few minutes; we check every 10 minutes and message you the moment it lands.</span></p></div>
+<div class="test-ctl" style="margin-top:20px"><span>TEST: show what happens if</span><div class="seg"><button type="button" data-variant="wait" aria-pressed="true">Still paying</button><button type="button" data-variant="paid">Payment received</button><button type="button" data-variant="failed">Payment failed</button><button type="button" data-variant="expired">Hold ran out</button></div></div></div><aside class="sum" aria-label="Your stay"><img class="pic" src="assets/img/hero-sm.jpg" alt="The shophouse front on Jalan Hang Kasturi (render)">
+<div class="card"><h3>The whole shophouse</h3><div class="note">Jalan Hang Kasturi, Melaka · all rooms, just your group</div>
+<dl class="dl"><dt>Dates</dt><dd data-s="dates"></dd><dt>Nights</dt><dd data-s="nights"></dd><dt>Guests</dt><dd data-s="guests"></dd></dl>
+<div class="tot"><span>Total</span><b>RM —</b></div></div></aside></main><script src="assets/draft.js"></script>
+</body></html>
