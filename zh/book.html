@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>预订 · Equity Homestay 马六甲</title>
+<meta name="description" content="选好日期，预订鸡场街旁的整间店屋。我们会在 WhatsApp 确认，并发送安全付款链接。">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://example.com/zh/book.html">
+<link rel="alternate" hreflang="en" href="https://example.com/book.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://example.com/zh/book.html">
+<link rel="alternate" hreflang="x-default" href="https://example.com/book.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Equity Homestay">
+<meta property="og:title" content="预订 · Equity Homestay 马六甲">
+<meta property="og:description" content="选好日期，预订鸡场街旁的整间店屋。我们会在 WhatsApp 确认，并发送安全付款链接。">
+<meta property="og:url" content="https://example.com/zh/book.html">
+<meta property="og:image" content="https://example.com/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4EFE7">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/book.css">
+<script src="../assets/config.js"></script>
+<script src="../assets/track.js" defer></script>
+<script src="../assets/site.js" defer></script>
+<script src="../assets/book.js" defer></script>
+
+</head>
+<body data-page="book">
+<a class="skip" href="#main"><span class="zh" lang="zh-Hans">跳到正文</span></a>
+<header class="top"><div class="wrap">
+  <a class="mark" href="index.html">Equity<small>Homestay · Melaka</small></a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="index.html" data-nav="home"><span class="zh" lang="zh-Hans">首页</span></a>
+    <a href="house.html" data-nav="house"><span class="zh" lang="zh-Hans">房子</span></a>
+    <a href="book.html" data-nav="book" aria-current="page"><span class="zh" lang="zh-Hans">预订</span></a>
+    <a href="contact.html" data-nav="contact"><span class="zh" lang="zh-Hans">联系</span></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language / 语言">
+    <a href="../book.html" hreflang="en" lang="en" data-track="lang_switch" class="lang-en">EN</a>
+    <a href="../zh/book.html" hreflang="zh-Hans" lang="zh-Hans" data-track="lang_switch" class="lang-zh">中文</a>
+  </div>
+  <a class="btn btn-book" href="book.html"><span class="zh" lang="zh-Hans">预订</span></a>
+  <button class="menu-btn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false"><span></span></button>
+</div></header>
+<main id="main">
+<div class="wrap bk" id="bk" data-mode="whatsapp-enquiry">
+  <div class="bk-head">
+    <h1><span class="zh" lang="zh-Hans">预订整间房子</span></h1>
+    <ol class="steps" aria-label="Booking steps">
+      <li data-s="dates"><span class="zh" lang="zh-Hans">日期</span></li>
+      <li data-s="guests"><span class="zh" lang="zh-Hans">人数</span></li>
+      <li data-s="details" class="m-enquiry"><span class="zh" lang="zh-Hans">资料</span></li>
+      <li data-s="send" class="m-enquiry"><span class="zh" lang="zh-Hans">发送</span></li>
+      <li data-s="engine" class="m-engine"><span class="zh" lang="zh-Hans">预订付款</span></li>
+    </ol>
+  </div>
+
+  <div class="bk-grid">
+    <div class="bk-main">
+      <noscript><p class="panel"><span class="zh" lang="zh-Hans">日期选择需要 JavaScript。你也可以直接在 WhatsApp 预订：</span><a href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82">WhatsApp</a></p></noscript>
+
+      <section class="panel" data-panel="dates" aria-labelledby="d-h">
+        <h2 id="d-h"><span class="zh" lang="zh-Hans">什么时候来？</span></h2>
+        <p class="hint"><span class="zh" lang="zh-Hans">先点入住日期，再点退房日期。</span> <span class="m-enquiry"><span class="zh" lang="zh-Hans">这是预订请求：我们会先在 WhatsApp 确认有空房，之后才付款。</span></span></p>
+        <div class="cal" id="cal" aria-live="polite"></div>
+        <div class="nav-row"><span></span><button class="btn btn-solid" type="button" data-next="guests" id="to-guests" disabled><span class="zh" lang="zh-Hans">继续</span></button></div>
+      </section>
+
+      <section class="panel" data-panel="guests" aria-labelledby="g-h" hidden>
+        <h2 id="g-h"><span class="zh" lang="zh-Hans">几位入住？</span></h2>
+        <div class="stepper-row">
+          <div><b><span class="zh" lang="zh-Hans">成人</span></b><small><span class="zh" lang="zh-Hans">13 岁及以上</span></small></div>
+          <div class="stepper" data-k="adults"><button type="button" data-d="-1" aria-label="−">−</button><output aria-live="polite">2</output><button type="button" data-d="1" aria-label="+">+</button></div>
+        </div>
+        <div class="stepper-row">
+          <div><b><span class="zh" lang="zh-Hans">儿童</span></b><small><span class="zh" lang="zh-Hans">13 岁以下</span></small></div>
+          <div class="stepper" data-k="children"><button type="button" data-d="-1" aria-label="−">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="+">+</button></div>
+        </div>
+        <p class="hint" style="margin-top:18px"><span class="zh" lang="zh-Hans">床位：两张特大床、一张大床。</span> <span id="cap-note"></span></p>
+        <div class="nav-row">
+          <button class="btn btn-book" type="button" data-next="dates"><span class="zh" lang="zh-Hans">返回</span></button>
+          <button class="btn btn-solid m-enquiry" type="button" data-next="details"><span class="zh" lang="zh-Hans">继续</span></button>
+          <button class="btn btn-solid m-engine" type="button" data-next="engine"><span class="zh" lang="zh-Hans">继续预订</span></button>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="details" aria-labelledby="t-h" hidden>
+        <h2 id="t-h"><span class="zh" lang="zh-Hans">预订人资料</span></h2>
+        <form id="details-form" novalidate>
+          <div class="field"><label for="f-name"><span class="zh" lang="zh-Hans">你的名字</span></label><input id="f-name" name="name" autocomplete="name" required maxlength="80"></div>
+          <div class="field"><label for="f-country"><span class="zh" lang="zh-Hans">从哪里来？</span></label>
+            <select id="f-country" name="country">
+              <option class="zh" value="Malaysia">马来西亚</option><option class="zh" value="Singapore">新加坡</option><option class="zh" value="Other">其他地方</option>
+            </select></div>
+          <div class="field"><label for="f-note"><span class="zh" lang="zh-Hans">还有什么想告诉我们？（可不填）</span></label><textarea id="f-note" name="note" maxlength="500"></textarea></div>
+          <p class="err" id="f-err" hidden role="alert"><span class="zh" lang="zh-Hans">请填写名字，方便我们回复你。</span></p>
+        </form>
+        <div class="nav-row"><button class="btn btn-book" type="button" data-next="guests"><span class="zh" lang="zh-Hans">返回</span></button><button class="btn btn-solid" type="button" data-next="send"><span class="zh" lang="zh-Hans">确认请求</span></button></div>
+      </section>
+
+      <section class="panel" data-panel="send" aria-labelledby="s-h" hidden>
+        <h2 id="s-h"><span class="zh" lang="zh-Hans">发送预订请求</span></h2>
+        <p class="hint"><span class="zh" lang="zh-Hans">会打开 WhatsApp 并写好你的请求。在 WhatsApp 按发送，我们会回复确认日期。</span></p>
+        <div class="nav-row"><button class="btn btn-book" type="button" data-next="details"><span class="zh" lang="zh-Hans">返回</span></button>
+          <a class="btn btn-wa" id="send-wa" href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z" stroke-linejoin="round"/><path d="M9 8.6c0 3 2.6 6 6 6.2l1-1.3-1.8-1-1 .8c-1-.4-2-1.5-2.4-2.4l.8-1-1-1.8z" stroke-linejoin="round"/></svg><span class="zh" lang="zh-Hans">用 WhatsApp 发送</span></a></div>
+        <p class="held"><span class="zh" lang="zh-Hans">我们在 WhatsApp 回复后才算保留日期；在那之前不会扣任何款项。</span></p>
+        <h3 class="msg-h"><span class="zh" lang="zh-Hans">你的信息</span></h3>
+        <pre class="msg" id="msg-preview" aria-label="Message preview"></pre>
+        <ol class="next">
+          <li><span class="zh" lang="zh-Hans">我们确认那几天有空房。</span></li>
+          <li><span class="zh" lang="zh-Hans">我们发送安全付款链接——FPX 网上银行、银行卡或 DuitNow。</span></li>
+          <li><span class="zh" lang="zh-Hans">付款后，确认信息和入住方式会发到 WhatsApp。</span></li>
+        </ol>
+      </section>
+
+      <section class="panel done" data-panel="sent" aria-labelledby="c-h" hidden>
+        <svg class="tick" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14 24.5l7 7 13-14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h2 id="c-h"><span class="zh" lang="zh-Hans">请求已在 WhatsApp 准备好。</span></h2>
+        <p class="lede"><span class="zh" lang="zh-Hans">如果还没按发送，请在 WhatsApp 里按发送。我们会在那里确认日期并发送付款链接，确认信息随后通过 WhatsApp 发给你。</span></p>
+        <div class="nav-row"><a class="btn btn-book" href="index.html"><span class="zh" lang="zh-Hans">返回首页</span></a><button class="btn btn-solid" type="button" id="resend"><span class="zh" lang="zh-Hans">再次打开 WhatsApp</span></button></div>
+      </section>
+
+      <section class="panel" data-panel="engine" aria-labelledby="e-h" hidden>
+        <h2 id="e-h"><span class="zh" lang="zh-Hans">安全预订与付款</span></h2>
+        <p class="hint"><span class="zh" lang="zh-Hans">你的日期会带到我们的预订系统，在那里可用 FPX、银行卡或 DuitNow 付款。</span></p>
+        <div id="engine-slot" class="engine-slot"></div>
+        <div class="nav-row"><button class="btn btn-book" type="button" data-next="guests"><span class="zh" lang="zh-Hans">返回</span></button><a class="btn btn-solid" id="engine-go" href="#" rel="noopener"><span class="zh" lang="zh-Hans">前往安全预订</span></a></div>
+      </section>
+    </div>
+
+    <aside class="summary" aria-label="Your stay">
+      <figure class="fig"><img src="../assets/img/master-sm.jpg" alt="" width="820" height="615"><span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
+      <div class="s-body">
+        <h3><span class="zh" lang="zh-Hans">整间房子</span></h3>
+        <p class="s-sub">Jalan Hang Kasturi, Melaka · <span class="zh" lang="zh-Hans">3 卧 · 4 浴</span></p>
+        <dl class="lines">
+          <div><dt><span class="zh" lang="zh-Hans">日期</span></dt><dd id="s-dates">—</dd></div>
+          <div><dt><span class="zh" lang="zh-Hans">人数</span></dt><dd id="s-guests">—</dd></div>
+          <div class="price"><dt id="s-nights"><span class="zh" lang="zh-Hans">整间房子</span></dt><dd id="s-sub">RM —</dd></div>
+          <div class="total"><dt><span class="zh" lang="zh-Hans">总计</span></dt><dd id="s-total">RM —</dd></div>
+        </dl>
+        <ul class="assure">
+          <li><span class="zh" lang="zh-Hans">确认日期前不付款</span></li>
+          <li><span class="zh" lang="zh-Hans">通过安全链接以 FPX、银行卡或 DuitNow 付款</span></li>
+          <li><span class="zh" lang="zh-Hans">取消政策：</span> <span class="tbc"><span class="zh" lang="zh-Hans">待公布</span></span></li>
+        </ul>
+        <p class="s-note" id="s-note"><span class="zh" lang="zh-Hans">付款前会在 WhatsApp 确认完整价格。</span></p>
+      </div>
+    </aside>
+  </div>
+</div>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="mark" href="index.html">Equity<small>Homestay · Melaka</small></a>
+    <p class="foot-line"><span class="zh" lang="zh-Hans">Melaka Jalan Hang Kasturi 的一整间店屋，离鸡场街只隔一条街。</span></p></div>
+  <ul>
+    <li><a href="house.html"><span class="zh" lang="zh-Hans">房子</span></a></li>
+    <li><a href="book.html"><span class="zh" lang="zh-Hans">预订</span></a></li>
+    <li><a href="contact.html"><span class="zh" lang="zh-Hans">联系</span></a></li>
+  </ul>
+  <ul>
+    <li><a href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82" target="_blank" rel="noopener" data-track="whatsapp_click" data-where="footer">WhatsApp</a></li>
+    <li>Jalan Hang Kasturi, Melaka</li>
+  </ul>
+  <p class="fine"><span class="zh" lang="zh-Hans">室内图片为设计师效果图，完工后将换上实景照片。</span> © 2026 Equity Homestay</p>
+</div></footer>
+<div class="dock">
+  <a class="btn btn-wa" href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82" target="_blank" rel="noopener" data-track="whatsapp_click" data-where="dock"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z" stroke-linejoin="round"/><path d="M9 8.6c0 3 2.6 6 6 6.2l1-1.3-1.8-1-1 .8c-1-.4-2-1.5-2.4-2.4l.8-1-1-1.8z" stroke-linejoin="round"/></svg><span>WhatsApp</span></a>
+  <a class="btn btn-solid" href="book.html"><span class="zh" lang="zh-Hans">选择日期</span></a>
+</div>
+</body>
+</html>

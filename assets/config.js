@@ -1,0 +1,1 @@
+window.EQ_CONFIG={"name": "Equity Homestay", "lang": null, "maxGuests": 6, "whatsapp": "", "rates": {"currency": "RM", "weeknight": null, "weekendNight": null, "taxesIncluded": true}, "booking": {"mode": "whatsapp-enquiry", "engine": {"provider": "", "display": "redirect", "urlTemplate": "", "embedHtml": ""}}, "analytics": {"ga4Id": "", "metaPixelId": "", "eventEndpoint": ""}};

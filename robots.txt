@@ -1,0 +1,3 @@
+# Not live yet: config.json site.indexable is false
+User-agent: *
+Disallow: /
