@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#F4EFE7">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 <script src="../assets/config.js"></script>
@@ -91,139 +91,172 @@
   <button class="menu-btn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false"><span></span></button>
 </div></header>
 <main id="main">
-<section class="hero">
-  <figure class="fig">
-    <img src="../assets/img/hero.jpg" srcset="../assets/img/hero-sm.jpg 820w, ../assets/img/hero.jpg 1800w" sizes="100vw" alt="The long living room along an exposed brick wall, looking back towards the steel staircase and the planted air-well" fetchpriority="high">
-    <span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span>
-  </figure>
-  <div class="hero-card">
-    <h1><span class="zh" lang="zh-Hans">整间店屋，<br>离鸡场街只隔一条街。</span></h1>
-    <p><span class="zh" lang="zh-Hans">三间卧室、四间浴室，天井下有绿植和流水。整间房子，只属于你们一家。</span></p>
-    <div class="acts">
-      <a class="btn btn-solid" href="book.html" data-track="book_click" data-where="index"><span class="zh" lang="zh-Hans">选择日期</span></a>
-      <a class="btn btn-book" href="house.html"><span class="zh" lang="zh-Hans">看看房子</span></a>
-    </div>
+<section class="hero" aria-labelledby="hero-h">
+  <div class="fig hero-fig"><img src="../assets/img/hero.jpg" srcset="../assets/img/hero-sm.jpg 820w, ../assets/img/hero.jpg 1800w" sizes="100vw" alt="The long living room along an exposed brick wall, looking back towards the steel staircase and the planted air-well" fetchpriority="high"></div>
+  <div class="hero-txt wrap">
+    <h1 id="hero-h"><span class="zh" lang="zh-Hans">马六甲，一整间店屋。</span></h1>
+    <p class="hero-sub"><span class="zh" lang="zh-Hans">离鸡场街只隔一条街，一次只接待一组客人。</span></p>
+    <a class="btn btn-solid" href="book.html" data-track="book_click" data-where="index"><span class="zh" lang="zh-Hans">选择日期</span></a>
   </div>
+  <p class="hero-cap"><span class="zh" lang="zh-Hans">设计师效果图</span></p>
 </section>
 
-<section class="sec wrap" aria-labelledby="story-h">
-  <div class="story">
-    <div class="dims" aria-hidden="true">
-      <div><span>3.6 m</span><small><span class="zh" lang="zh-Hans">宽</span></small></div>
-      <div><span>25.8 m</span><small><span class="zh" lang="zh-Hans">深</span></small></div>
-    </div>
-    <div>
+<section class="story" aria-labelledby="story-h">
+  <div class="wrap story-in">
+    <div class="story-txt">
       <h2 class="h2" id="story-h"><span class="zh" lang="zh-Hans">门面窄，里面深。</span></h2>
-      <p class="lede" style="margin-top:22px"><span class="zh" lang="zh-Hans">和马六甲的老店屋一样，它临街的门面很窄，往里走却很深。上下两层，红砖墙、水磨石地板和浅橡木，中间是一口露天天井，光从上面洒下来。</span></p>
-      <p class="lede"><span class="zh" lang="zh-Hans">从前往后走：客厅、天井、餐桌，再沿着钢楼梯上楼到卧室。</span></p>
+      <p class="lede"><span class="zh" lang="zh-Hans">和马六甲的老店屋一样，它临街的门面很窄，往里走却很深。上下两层，红砖墙、水磨石地板和浅橡木，中间是一口露天天井，光从上面洒下来。</span></p>
+    </div>
+    <div class="plan-fig" aria-label="Plan proportion: 3.6 metres wide, 25.8 metres deep">
+      <p class="dim dim-w"><b>3.6</b> m <span class="zh" lang="zh-Hans">宽</span></p>
+      <svg class="plan" viewBox="0 0 258 36" preserveAspectRatio="none" aria-hidden="true"><rect class="fl" x="1" y="1" width="256" height="34"/><rect class="dr" x="0" y="12" width="3" height="12"/><path d="M1 1H257V35H1V24M1 12V1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+      <p class="dim dim-d"><b>25.8</b> m <span class="zh" lang="zh-Hans">深，从临街大门到后墙</span></p>
     </div>
   </div>
 </section>
 
-<div class="brick" role="presentation"></div>
-
-<section class="sec wrap" aria-labelledby="walk-h">
-  <h2 class="h2" id="walk-h" style="margin-bottom:clamp(40px,6vw,80px)"><span class="zh" lang="zh-Hans">从门口走到最里面。</span></h2>
-  <div class="walk">
-    <article class="stop a">
-      <figure class="fig"><img loading="lazy" src="../assets/img/living.jpg" srcset="../assets/img/living-sm.jpg 820w, ../assets/img/living.jpg 1800w" sizes="(max-width:860px) 100vw, 66vw" alt="Sofa corner against the brick wall with framed brush paintings"><span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
-      <div class="txt"><span class="step-no">i.</span>
-        <h3><span class="zh" lang="zh-Hans">客厅</span></h3>
-        <p><span class="zh" lang="zh-Hans">沿着红砖墙的长客厅，有沙发、电视和一张游戏桌，逛完鸡场街回来正好坐坐。</span></p></div>
-    </article>
-    <article class="stop b">
-      <figure class="fig"><img loading="lazy" src="../assets/img/airwell.jpg" srcset="../assets/img/airwell-sm.jpg 820w, ../assets/img/airwell.jpg 1800w" sizes="(max-width:860px) 100vw, 66vw" alt="The air-well with plants and wooden steps at the foot of the black steel staircase"><span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
-      <div class="txt"><span class="step-no">ii.</span>
-        <h3><span class="zh" lang="zh-Hans">天井</span></h3>
-        <p><span class="zh" lang="zh-Hans">房子的中心：天窗下的绿植与流水，就在开放式钢楼梯脚下。</span></p></div>
-    </article>
-    <article class="stop c">
-      <figure class="fig"><img loading="lazy" src="../assets/img/dining.jpg" srcset="../assets/img/dining-sm.jpg 820w, ../assets/img/dining.jpg 1800w" sizes="(max-width:860px) 100vw, 84vw" alt="Oak dining table beside the staircase with the kitchenette behind"><span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
-      <div class="txt"><span class="step-no">iii.</span>
-        <h3><span class="zh" lang="zh-Hans">餐桌和小厨房</span></h3>
-        <p><span class="zh" lang="zh-Hans">楼梯下一张两米长的橡木餐桌，后面是小厨房：冰箱、水槽和炉灶。</span></p></div>
-    </article>
-    <article class="stop d">
-      <figure class="fig"><img loading="lazy" src="../assets/img/tile-room.jpg" srcset="../assets/img/tile-room-sm.jpg 820w, ../assets/img/tile-room.jpg 1800w" sizes="(max-width:860px) 100vw, 50vw" alt="Bedroom under the exposed clay-tile roof and timber rafters, with an oak bed" style="object-position:40% 50%"><span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
-      <figure class="fig fig2"><img loading="lazy" src="../assets/img/bath.jpg" srcset="../assets/img/bath-sm.jpg 820w, ../assets/img/bath.jpg 1800w" sizes="(max-width:860px) 100vw, 50vw" alt="Freestanding oval bathtub in white marble beside a planter and louvred window"><span class="ai"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
-      <div class="txt"><span class="step-no">iv.</span>
-        <h3><span class="zh" lang="zh-Hans">楼上，老屋瓦下</span></h3>
-        <p><span class="zh" lang="zh-Hans">三间卧室。其中两间保留了原本的陶瓦屋顶和木椽；最里面的主卧配有独立浴缸。</span></p>
-        <a class="btn btn-book" href="house.html" style="margin-top:6px"><span class="zh" lang="zh-Hans">看房间</span></a></div>
-    </article>
+<section class="tour" id="tour" aria-labelledby="tour-h" data-video="" data-frames="" data-frame-count="0" data-marks="">
+  <div class="wrap tour-intro">
+    <h2 class="h2" id="tour-h"><span class="zh" lang="zh-Hans">从前门走到最里面。</span></h2>
+    <p class="lede"><span class="zh" lang="zh-Hans">继续往下滑：临街大门、长客厅、天井、餐桌、楼梯，然后是卧室。六张都是设计师效果图。</span></p>
   </div>
-</section>
-
-<section class="sec-tight glance" aria-labelledby="glance-h">
-  <div class="wrap">
-    <h2 class="h2" id="glance-h"><span class="zh" lang="zh-Hans">房子一览。</span></h2>
-    <div class="row">
-      <div class="cell"><div class="n">2</div><div class="l"><span class="zh" lang="zh-Hans">张特大床</span></div></div>
-      <div class="cell"><div class="n">1</div><div class="l"><span class="zh" lang="zh-Hans">张大床</span></div></div>
-      <div class="cell"><div class="n">4</div><div class="l"><span class="zh" lang="zh-Hans">间浴室</span></div></div>
-      <div class="cell"><div class="n">1</div><div class="l"><span class="zh" lang="zh-Hans">个天井</span></div></div>
+  <div class="tour-track" style="--n:6">
+    <div class="tour-stage">
+      <div class="tour-slot" hidden></div>
+      <ol class="tour-stops">
+      <li class="tstop" style="--o:50% 55%">
+        <figure class="fig"><img loading="eager" decoding="async" src="../assets/img/entry.jpg" srcset="../assets/img/entry-sm.jpg 820w, ../assets/img/entry.jpg 1800w" sizes="(max-width:860px) 100vw, 64vw" alt="The entrance: a timber door, a luggage rack and the start of the brick wall"></figure>
+        <div class="tcap">
+          <h3><span class="zh" lang="zh-Hans">临街大门</span></h3>
+          <p><span class="zh" lang="zh-Hans">行李放在门边的架子上。红砖墙从这里开始，一直延伸到房子最里面。</span></p></div>
+      </li>
+      <li class="tstop" style="--o:50% 58%">
+        <figure class="fig"><img loading="lazy" decoding="async" src="../assets/img/hero.jpg" srcset="../assets/img/hero-sm.jpg 820w, ../assets/img/hero.jpg 1800w" sizes="(max-width:860px) 100vw, 64vw" alt="The long living room along an exposed brick wall, looking back towards the steel staircase and the planted air-well"></figure>
+        <div class="tcap">
+          <h3><span class="zh" lang="zh-Hans">长客厅</span></h3>
+          <p><span class="zh" lang="zh-Hans">沿着红砖墙摆着沙发、电视和一张游戏桌，逛完鸡场街回来正好坐坐。</span></p></div>
+      </li>
+      <li class="tstop" style="--o:40% 60%">
+        <figure class="fig"><img loading="lazy" decoding="async" src="../assets/img/airwell.jpg" srcset="../assets/img/airwell-sm.jpg 820w, ../assets/img/airwell.jpg 1800w" sizes="(max-width:860px) 100vw, 64vw" alt="The air-well with plants and wooden steps at the foot of the black steel staircase"></figure>
+        <div class="tcap">
+          <h3><span class="zh" lang="zh-Hans">天井</span></h3>
+          <p><span class="zh" lang="zh-Hans">天窗下的绿植与流水，就在开放式钢楼梯脚下。</span></p></div>
+      </li>
+      <li class="tstop" style="--o:45% 60%">
+        <figure class="fig"><img loading="lazy" decoding="async" src="../assets/img/dining.jpg" srcset="../assets/img/dining-sm.jpg 820w, ../assets/img/dining.jpg 1800w" sizes="(max-width:860px) 100vw, 64vw" alt="Oak dining table beside the staircase with the kitchenette behind"></figure>
+        <div class="tcap">
+          <h3><span class="zh" lang="zh-Hans">餐桌</span></h3>
+          <p><span class="zh" lang="zh-Hans">楼梯下一张两米长的橡木餐桌，后面是小厨房：冰箱、水槽和炉灶。</span></p></div>
+      </li>
+      <li class="tstop" style="--o:60% 40%">
+        <figure class="fig"><img loading="lazy" decoding="async" src="../assets/img/stair.jpg" srcset="../assets/img/stair-sm.jpg 820w, ../assets/img/stair.jpg 1800w" sizes="(max-width:860px) 100vw, 64vw" alt="The open black-steel staircase rising along the brick wall"></figure>
+        <div class="tcap">
+          <h3><span class="zh" lang="zh-Hans">楼梯</span></h3>
+          <p><span class="zh" lang="zh-Hans">开放式黑色钢楼梯，沿着红砖墙通往楼上的卧室。</span></p></div>
+      </li>
+      <li class="tstop" style="--o:40% 45%">
+        <figure class="fig"><img loading="lazy" decoding="async" src="../assets/img/tile-room.jpg" srcset="../assets/img/tile-room-sm.jpg 820w, ../assets/img/tile-room.jpg 1800w" sizes="(max-width:860px) 100vw, 64vw" alt="Bedroom under the exposed clay-tile roof and timber rafters, with an oak bed"></figure>
+        <div class="tcap">
+          <h3><span class="zh" lang="zh-Hans">老屋瓦下</span></h3>
+          <p><span class="zh" lang="zh-Hans">两间卧室保留了原本的陶瓦屋顶和木椽；最里面的主卧配有独立浴缸。</span></p></div>
+      </li>
+      </ol>
+      <div class="tour-side">
+        <div class="tour-rail" role="group" aria-label="Rooms / 房间">
+          <button type="button" data-stop="0"><span class="zh" lang="zh-Hans">大门</span></button>
+          <button type="button" data-stop="1"><span class="zh" lang="zh-Hans">客厅</span></button>
+          <button type="button" data-stop="2"><span class="zh" lang="zh-Hans">天井</span></button>
+          <button type="button" data-stop="3"><span class="zh" lang="zh-Hans">餐桌</span></button>
+          <button type="button" data-stop="4"><span class="zh" lang="zh-Hans">楼梯</span></button>
+          <button type="button" data-stop="5"><span class="zh" lang="zh-Hans">卧室</span></button>
+        </div>
+        <div class="tour-foot"><p class="tour-now" aria-live="polite"></p><div class="tour-plan" aria-hidden="true"><span class="tour-fill"></span></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec wrap" aria-labelledby="loc-h">
-  <div class="loc">
-    <div>
-      <h2 class="h2" id="loc-h"><span class="zh" lang="zh-Hans">就在鸡场街一带。</span></h2>
-      <p class="addr">Jalan Hang Kasturi, Melaka</p>
-      <p class="lede"><span class="zh" lang="zh-Hans">离鸡场街只隔一条街，就在马六甲古城里。出门走路就到。</span></p>
-      <a class="btn btn-book" href="https://www.google.com/maps/search/?api=1&query=Jalan+Hang+Kasturi+Melaka" target="_blank" rel="noopener"><span class="zh" lang="zh-Hans">在地图中打开</span></a>
-    </div>
-    <div class="map" role="img" aria-label="Map placeholder for Jalan Hang Kasturi, Melaka">
-      <div class="map-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
-        <b>Jalan Hang Kasturi</b><small><span class="zh" lang="zh-Hans">确认门牌后在这里嵌入地图</span></small></div>
-    </div>
-  </div>
-</section>
-
-<div class="brick" role="presentation"></div>
-
-<section class="sec wrap" aria-labelledby="inc-h">
-  <div class="incl">
-    <h2 class="h2" id="inc-h"><span class="zh" lang="zh-Hans">房子里有什么。</span></h2>
-    <ul>
-      <li><b class="zh" lang="zh-Hans">整间房子</b><span class="note"><span class="zh" lang="zh-Hans">上下两层，只供你们使用。</span></span></li>
-      <li><b class="zh" lang="zh-Hans">三间卧室</b><span class="note"><span class="zh" lang="zh-Hans">两张特大床、一张大床，每间都有冷气。</span></span></li>
-      <li><b class="zh" lang="zh-Hans">四间浴室</b><span class="note"><span class="zh" lang="zh-Hans">黄铜花洒；主卧有独立浴缸。</span></span></li>
-      <li><b class="zh" lang="zh-Hans">天井</b><span class="note"><span class="zh" lang="zh-Hans">天窗下的绿植和流水。</span></span></li>
-      <li><b class="zh" lang="zh-Hans">小厨房和餐桌</b><span class="note"><span class="zh" lang="zh-Hans">冰箱、水槽、炉灶和两米长餐桌。</span></span></li>
-      <li><b class="zh" lang="zh-Hans">客厅和游戏区</b><span class="note"><span class="zh" lang="zh-Hans">沙发、电视和游戏桌。</span></span></li>
+<section class="count" aria-labelledby="count-h">
+  <div class="wrap count-in">
+    <h2 class="h2" id="count-h"><span class="zh" lang="zh-Hans">只住你们一组。</span></h2>
+    <ul class="tally">
+      <li><span class="n" data-to="3">3</span><span class="w"><b><span class="zh" lang="zh-Hans">间卧室</span></b><span class="zh" lang="zh-Hans">两张特大床、一张大床，每间都有冷气。</span></span></li>
+      <li><span class="n" data-to="4">4</span><span class="w"><b><span class="zh" lang="zh-Hans">间浴室</span></b><span class="zh" lang="zh-Hans">黄铜花洒；主卧有独立浴缸。</span></span></li>
+      <li><span class="n" data-to="1">1</span><span class="w"><b><span class="zh" lang="zh-Hans">个天井</span></b><span class="zh" lang="zh-Hans">房子中间的天井，抬头就是天空。</span></span></li>
     </ul>
   </div>
 </section>
 
-<section class="sec-tight wrap" aria-labelledby="faq-h">
-  <h2 class="h2" id="faq-h" style="margin-bottom:28px"><span class="zh" lang="zh-Hans">预订之前。</span></h2>
-  <div class="faq">
-    <details open><summary><span class="zh" lang="zh-Hans">是整间房子吗？</span></summary>
-      <div class="a"><span class="zh" lang="zh-Hans">是的。一次预订就是上下两层，没有其他住客，也不和别人共用房间。</span></div></details>
-    <details><summary><span class="zh" lang="zh-Hans">最多可以住几个人？</span></summary>
-      <div class="a"><span class="zh" lang="zh-Hans">房子有两张特大床和一张大床。最多入住人数</span><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span>.</div></details>
-    <details><summary><span class="zh" lang="zh-Hans">几点入住、几点退房？</span></summary>
-      <div class="a"><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span> <span class="zh" lang="zh-Hans">——开放预订前会公布。</span></div></details>
-    <details><summary><span class="zh" lang="zh-Hans">有停车位吗？</span></summary>
-      <div class="a"><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span><span class="zh" lang="zh-Hans">。可以在 WhatsApp 问我们附近哪里停车。</span></div></details>
-    <details><summary><span class="zh" lang="zh-Hans">怎么付款？</span></summary>
-      <div class="a"><span class="zh" lang="zh-Hans">预订时在线付款：FPX 网上银行、借记卡或信用卡，或 DuitNow QR。付款后会通过 WhatsApp 发确认。</span></div></details>
-    <details><summary><span class="zh" lang="zh-Hans">这些是实景照片吗？</span></summary>
-      <div class="a"><span class="zh" lang="zh-Hans">还不是。这些是室内设计师的效果图，装修完成后会换上实景照片。</span></div></details>
+<section class="sec incl-sec" aria-labelledby="inc-h">
+  <div class="wrap incl-in">
+    <h2 class="h2" id="inc-h"><span class="zh" lang="zh-Hans">房子里有。</span></h2>
+    <ul class="icons">
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15 16 5l12 10M7 13v14h18V13M13 27v-8h6v8"/></svg><span><b><span class="zh" lang="zh-Hans">上下两层，只有你们</span></b></span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 9h24v8H4zM8 21l-1 4M16 21v5M24 21l1 4M8 13h16"/></svg><span><b><span class="zh" lang="zh-Hans">每间卧室都有冷气</span></b></span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12h22v15H5zM5 18h22M10 8v4M16 6v6M22 8v4M10 22v2"/></svg><span><b><span class="zh" lang="zh-Hans">小厨房：冰箱、水槽、炉灶</span></b></span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 13h26M7 13v13M25 13v13M11 9h10"/></svg><span><b><span class="zh" lang="zh-Hans">两米长橡木餐桌</span></b></span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 7h24v15H4zM12 27h8M16 22v5"/></svg><span><b><span class="zh" lang="zh-Hans">沙发、电视、游戏桌</span></b></span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 17h24v3a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6zM8 17V7a3 3 0 0 1 6 0M10 26l-1 3M22 26l1 3"/></svg><span><b><span class="zh" lang="zh-Hans">花洒，主卧有浴缸</span></b></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec wrap loc-sec" aria-labelledby="loc-h">
+  <div class="loc">
+    <div>
+      <h2 class="h2" id="loc-h"><span class="zh" lang="zh-Hans">就在鸡场街一带。</span></h2>
+      <p class="addr">Jalan Hang Kasturi, Melaka</p>
+      <p class="lede"><span class="zh" lang="zh-Hans">离鸡场街只隔一条街，就在马六甲古城里。</span></p>
+      <ul class="walk-times">
+        <li><span class="zh" lang="zh-Hans">鸡场街</span><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span></li>
+        <li><span class="zh" lang="zh-Hans">荷兰红屋广场</span><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span></li>
+      </ul>
+      <a class="tlink" href="https://www.google.com/maps/search/?api=1&query=Jalan+Hang+Kasturi+Melaka" target="_blank" rel="noopener"><span class="zh" lang="zh-Hans">在地图中打开</span></a>
+    </div>
+    <figure class="route" aria-label="Schematic of the walk from the house to Jonker Walk">
+      <svg viewBox="0 0 400 260" aria-hidden="true">
+        <path class="rg" d="M70 205 C 150 205, 170 70, 320 62"/>
+        <path class="rl" pathLength="1" d="M70 205 C 150 205, 170 70, 320 62"/>
+        <circle cx="70" cy="205" r="9"/><circle class="end" cx="320" cy="62" r="9"/>
+        <text x="40" y="245"><tspan class="zh">房子</tspan></text>
+        <text x="282" y="30"><tspan class="zh">鸡场街</tspan></text>
+        <text class="min" x="190" y="160"><tspan class="zh">步行时间：待确认</tspan></text>
+      </svg>
+      <figcaption><span class="zh" lang="zh-Hans">示意图，不是地图：确认门牌后补上街道图和步行时间。</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec faq-sec" aria-labelledby="faq-h">
+  <div class="wrap faq-in">
+    <h2 class="h2" id="faq-h"><span class="zh" lang="zh-Hans">预订之前。</span></h2>
+    <dl class="faq">
+      <div><dt><span class="zh" lang="zh-Hans">是整间房子吗？</span></dt>
+        <dd><span class="zh" lang="zh-Hans">是的。一次预订就是上下两层，没有其他住客，也不和别人共用房间。</span></dd></div>
+      <div><dt><span class="zh" lang="zh-Hans">最多可以住几个人？</span></dt>
+        <dd><span class="zh" lang="zh-Hans">房子有两张特大床和一张大床。最多入住人数</span><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span>.</dd></div>
+      <div><dt><span class="zh" lang="zh-Hans">几点入住、几点退房？</span></dt>
+        <dd><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span><span class="zh" lang="zh-Hans">。开放预订前会公布。</span></dd></div>
+      <div><dt><span class="zh" lang="zh-Hans">有停车位吗？</span></dt>
+        <dd><span class="tbc"><span class="zh" lang="zh-Hans">待确认</span></span><span class="zh" lang="zh-Hans">。可以在 WhatsApp 问我们附近哪里停车。</span></dd></div>
+      <div><dt><span class="zh" lang="zh-Hans">怎么付款？</span></dt>
+        <dd><span class="zh" lang="zh-Hans">预订时在线付款：FPX 网上银行、借记卡或信用卡，或 DuitNow QR。付款后会通过 WhatsApp 发确认。</span></dd></div>
+      <div><dt><span class="zh" lang="zh-Hans">这些是实景照片吗？</span></dt>
+        <dd><span class="zh" lang="zh-Hans">还不是。这些是室内设计师的效果图，装修完成后会换上实景照片。</span></dd></div>
+    </dl>
   </div>
 </section>
 
 <section class="close" aria-labelledby="close-h">
-  <figure class="fig"><img loading="lazy" src="../assets/img/airwell-top.jpg" srcset="../assets/img/airwell-top-sm.jpg 820w, ../assets/img/airwell-top.jpg 1800w" sizes="100vw" alt="Looking down the skylit air-well past the brick wall and timber shutters"><span class="ai" style="left:10px;right:auto"><span class="zh" lang="zh-Hans">效果图</span></span></figure>
-  <div class="close-card">
+  <figure class="fig close-fig"><img loading="lazy" src="../assets/img/airwell-top.jpg" srcset="../assets/img/airwell-top-sm.jpg 820w, ../assets/img/airwell-top.jpg 1800w" sizes="(max-width:860px) 100vw, 58vw" alt="Looking down the skylit air-well past the brick wall and timber shutters"></figure>
+  <div class="close-txt">
     <h2 id="close-h"><span class="zh" lang="zh-Hans">选好日期。</span></h2>
-    <p style="color:var(--char-2)"><span class="zh" lang="zh-Hans">几步就能在线预订，也可以先在 WhatsApp 问我们。</span></p>
+    <p><span class="zh" lang="zh-Hans">选好入住日期和人数，请求会通过 WhatsApp 发给我们；我们确认日期之后才需要付款。</span></p>
     <div class="acts">
       <a class="btn btn-solid" href="book.html" data-track="book_click" data-where="index"><span class="zh" lang="zh-Hans">选择日期</span></a>
-      <a class="btn btn-wa" href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82" target="_blank" rel="noopener" data-track="whatsapp_click" data-where="index"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.4 18.6z" stroke-linejoin="round"/><path d="M9 8.6c0 3 2.6 6 6 6.2l1-1.3-1.8-1-1 .8c-1-.4-2-1.5-2.4-2.4l.8-1-1-1.8z" stroke-linejoin="round"/></svg><span><span class="zh" lang="zh-Hans">WhatsApp 询问</span></span></a>
+      <a class="tlink" href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82" target="_blank" rel="noopener" data-track="whatsapp_click" data-where="index"><span class="zh" lang="zh-Hans">WhatsApp 询问</span></a>
     </div>
+    <p class="fine-note"><span class="zh" lang="zh-Hans">俯瞰天井：设计师效果图。</span></p>
   </div>
 </section>
 </main>
@@ -239,6 +272,7 @@
     <li><a href="https://wa.me/?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20Equity%20Homestay%E3%80%82" target="_blank" rel="noopener" data-track="whatsapp_click" data-where="footer">WhatsApp</a></li>
     <li>Jalan Hang Kasturi, Melaka</li>
   </ul>
+  <p class="foot-name" aria-hidden="true">Equity Homestay</p>
   <p class="fine"><span class="zh" lang="zh-Hans">室内图片为设计师效果图，完工后将换上实景照片。</span> © 2026 Equity Homestay</p>
 </div></footer>
 <div class="dock">

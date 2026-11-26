@@ -123,3 +123,10 @@ input[aria-invalid="true"]{border-color:var(--brick);background:#FBF1EC}
 .steps li{font-size:14px}
 .lines div{font-size:16px}
 @media (max-width:960px){.assure{display:none}}
+/* v2 phone floor: 15px text, 44px targets */
+@media (max-width:860px){
+  .steps li{font-size:15px;letter-spacing:.02em}
+  .cal-g .dow{font-size:15px;letter-spacing:0}
+  .s-sub,.s-note,.note,.msg-h,.assure,.lines div,.stepper-row small,.err{font-size:15px}
+  .stepper button{width:44px;height:44px}
+}

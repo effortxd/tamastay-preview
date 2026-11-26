@@ -101,6 +101,11 @@
     $("#s-nights").textContent = zh ? "整间房子" + (n ? " × " + n + " 晚" : "") : "Whole house" + (n ? " × " + n + " night" + (n > 1 ? "s" : "") : "");
     $("#s-sub").textContent = p == null ? (R.currency || "RM") + " —" : money(p);
     $("#s-total").textContent = p == null ? (R.currency || "RM") + " —" : money(p);
+    // the booking bar on the other pages shows the stay and its price once dates are picked
+    try {
+      if (n) sessionStorage.setItem("eq_stay", JSON.stringify({ d: fmt(S.in) + " → " + fmt(S.out), n: n,
+        p: p == null ? (R.currency || "RM") + " —" : money(p) }));
+    } catch (e) {}
   }
 
   /* the WhatsApp request */
